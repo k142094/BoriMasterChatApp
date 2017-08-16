@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>The Bori Master chat</title>
+    <title>Bori Master Chat</title>
     <style>
       * { margin: 0; padding: 0; box-sizing: border-box; }
       body { font: 13px Helvetica, Arial; }
@@ -12,17 +12,7 @@
       #messages li { padding: 5px 10px; }
       #messages li:nth-child(odd) { background: #eee; }
     </style>
-    
-  </head>
-
-  <body>
-    <h1>HELLLSDFo</h1>
-    <ul id="messages"></ul>
-    <form action="">
-      <input id="m" autocomplete="off" /><button>Send dat</button>
-    </form>
-  </body>
-  <script src="/socket.io/socket.io.js"></script>
+    <script src="http://borimasterchat-test.5apps.com:3000/socket.io/socket.io.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
     <script>
       $(function () {
@@ -37,4 +27,12 @@
         });
       });
     </script>
+  </head>
+
+  <body>
+    <ul id="messages"></ul>
+    <form action="">
+      <input id="m" autocomplete="off" /><button>Send</button>
+    </form>
+  </body>
 </html>
