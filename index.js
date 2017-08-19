@@ -20,7 +20,7 @@ io.on('connection',function(socket){
         io.emit('chat message', msg);
     });
 });
-http.listen(process.env.PORT || 3000, function(){
+http.listen(8080, function(){
   console.log('BEGINNN');
   console.log('listening on', http.address().port);
 });
